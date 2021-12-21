@@ -6,6 +6,11 @@ $(".circle").click(function (){
     $(this).toggleClass("plein");
 })
 
+$(".care").click(function (){
+    $(this).siblings().toggleClass("plein");
+    $(this).toggleClass("plein");
+})
+
 $("div").not(".global").not("#matrice").not(".ligne").not(".circle").click(function (){
     $(this).parent().children().addClass(this.className);
 })
